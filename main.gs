@@ -34,6 +34,8 @@ function doPost(e) {
 }
 
 function main(params) {
+  // ここでバリデーションをしてもいいが、slack app 側で doPost のリクエストを飛ばしてくるアクションは定義されている
+  // なので意図しないアクションは飛んでこないはず
   console.log(params)
 
   // アサインを決める
