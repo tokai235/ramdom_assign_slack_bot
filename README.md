@@ -26,5 +26,5 @@
 
 ## デバッグ
 - slack からのテストだとGoogle Apps Script でログが見れずツライ
-- なので `debugPost` で slack の app_mension レスポンスをスタブしている
+- なので `debugPost` で slack の `app_mension` レスポンスをスタブしている
 - これを使えば slack API からリクエストを受け取った後のテストができる
