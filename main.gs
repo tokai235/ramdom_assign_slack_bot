@@ -1,10 +1,14 @@
-// slack ID or テキスト を想定
-// slack ID はセンシティブな情報なので扱いに注意
 const MEMBER_NAMES = [
   "user1",
   "user2",
   "user3",
 ]
+
+// slack ID はセンシティブな情報なので扱いに注意
+// Google Apps Script のスクリプト プロパティに登録した上で呼び出すのがおすすめ
+// const MEMBER_IDS = [
+//   PropertiesService.getScriptProperties().getProperty("slackId_user1"),
+// ]
 
 function debugPost(){
   // app_mension のレスポンスダミー
@@ -66,7 +70,7 @@ function main(params) {
   // const replyText = makeReplyText(assignee)
 
   // slack ID を使う場合
-  // const assignee = assign(MEMBER_NAMES)
+  // const assignee = assign(MEMBER_IDS)
   // const replyText = makeReplyText(assignee, true)
 
   console.log({ assignee, replyText })
